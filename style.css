@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --cream: bisque;
+    --turquise: #13a4a4;
+    --violet: rgb(168, 98, 200);
+    --grey: rgb(139, 128, 147);
+
+
+
+}
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    font-size: 62.5%;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+.header-logo-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-header {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+
+.main-nav {
+    list-style-type: none;
+}
+
+.main-nav__item a {
+    color: bisque;
+    background-color: #13a4a4;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration-line: none;
+    display: block;
+    text-align: center;
+}
+
+.main-nav__item a:hover {
+    color: var(--grey);
+}
+
+.main-nav__item a:active {
+    color: var(--violet);
+}
+
+.main-nav__item a::after {
+    content: "";
+}
+
+#photodali {
+    width: 60px;
+    margin-bottom: -20px;
+    margin-top: -5px;
+}
+
+body {
+    background-color: #13a4a44f;
+}
+
+.main {
+    background-image: url(./pictures/fonddo.png);
+    border-radius: 15px;
+    margin-left: 5px;
+    margin-right: 10px;
+    border-color: #13a4a4;
+    border-style: solid;
+}
+
+.login {
+    background-color: rgb(85, 1, 96);
+    justify-content: center;
+    border-color: #13a4a4;
+    border-radius: 15px;
+    border-style: solid;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.divformlogin {
+    display: flex;
+    background-color: bisque;
+    width: 470px;
+    height: 470px;
+    justify-content: space-around;
+    border-radius: 10px;
+    border-color: rgb(233, 198, 156);
+    border-style: solid;
+    align-content: center;
+}
+
+.formlogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+span,
+p {
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 15px;
+}
+
+input {
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 15px;
+    border: solid 2px #13a4a4;
+    border-radius: 15px;
+    background-color: #13a4a44f;
+}
+
+.intro {
+    margin-left: 10px;
+
+
+}
