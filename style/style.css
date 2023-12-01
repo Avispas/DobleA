@@ -1,80 +1,90 @@
-*{
-    box-sizing:border-box;
-    padding:0;
-    margin:0; }
-html{
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-    font: size 62.5%; }
-.header-div{
-    display: flex;
-    justify-content: flex-start;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-.nav-header{
+:root {
+    --cream: bisque;
+    --turquise: #13a4a4;
+    --violet: rgb(168, 98, 200);
+    --grey: rgb(139, 128, 147);
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    font-size: 62.5%;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+.fig {
+    margin: 10px;
+}
+
+.header-logo-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-header {
     display: flex;
     align-items: flex-end;
 }
-/*
-.fig{
-    margin: 10px;
-} */
-.main-nav{
+
+.main-nav {
     list-style-type: none;
     font-family: "Lucida Console", Monaco, monospace;
     font-size: 1.0rem;
-    /*float:left;
-    overflow: hidden;
-    margin-top: 10px;
-    padding-left:  0px;
-    display: flex; */
-    }
-.main-nav__item{
+}
+
+.main-nav__item {
     display: inline-block;
 }
 
-.main-nav__item a{
+.main-nav__item a {
     color: bisque;
     background-color: #13a4a4;
     padding: 5px;
     border-radius: 2px;
     text-decoration-line: none;
-    display:block;  
-    text-align: center;  
+    display: block;
+    text-align: center;
 }
-.main-nav__item a:hover {color:#ff9987a4;}
-.main-nav__item a:active {color:#e9582c;}
-.main-nav__item a::after{content:"";}
-#photodali{
+
+.main-nav__item a:hover {
+    color: var(--grey);
+}
+
+.main-nav__item a:active {
+    color: var(--violet);
+}
+
+.main-nav__item a::after {
+    content: "";
+}
+
+#photodali {
     width: 60px;
     margin-bottom: -20px;
     margin-top: -5px;
 }
-body{
+
+body {
     background-color: #13a4a44f;
-    /*width: 100vh;*/
 }
-#background{
-    /*height: 850px;*/
-    width: auto;
-    height: 100vh;
-    background-image: url(fonddo.png);
-    background-repeat: repeat;
+
+.main {
+    background-image: url(../pictures/fonddo.png);
     border-radius: 15px;
     margin-left: 5px;
     margin-right: 10px;
-    position: static; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-color: #13a4a4;
     border-style: solid;
-    
+    height: 100vh;
 }
-.fondopic{
-    border-radius: 15px;
-}
-.login{
+
+.login {
     background-color: rgb(85, 1, 96);
     justify-content: center;
     border-color: #13a4a4;
@@ -84,10 +94,9 @@ body{
     height: 500px;
     display: flex;
     align-items: center;
-   //* margin-left: 50px;
-    margin-top: 50px;  *// 
 }
-.divformlogin{
+
+.divformlogin {
     display: flex;
     background-color: bisque;
     width: 470px;
@@ -98,26 +107,31 @@ body{
     border-style: solid;
     align-content: center;
 }
-.formlogin{
+
+.formlogin {
     display: flex;
     flex-direction: column;
     justify-content: center;
     justify-content: space-between;
     align-items: stretch;
 }
-span, p{
+
+span,
+p {
     font-family: "Lucida Console", Monaco, monospace;
     font-size: 15px;
 }
-input{
+
+input {
     font-family: "Lucida Console", Monaco, monospace;
     font-size: 15px;
-    border: solid 2px #13a4a4;0
+    border: solid 2px #13a4a4;
     border-radius: 15px;
     background-color: #13a4a44f;
 }
-.intro{
+
+.intro {
     margin-left: 10px;
-   
-  
+
+
 }
