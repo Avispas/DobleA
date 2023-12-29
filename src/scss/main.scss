@@ -4,73 +4,9 @@
 @import 'components/links';
 @import 'layout/page';
 @import 'layout/header';
+@import 'layout/formLog';
 @import 'layout/footer';
 @import 'pages/index';
 
 
-html {
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-    font-size: 62.5%;
-    font-family: $font;
-}
 
-
-body {
-    background-color: #13a4a44f;
-}
-
-.main {
-    background-image: url(../../public/images/bckgrnd.yllw-prpl.png);
-    border-radius: 15px;
-    margin-left: 5px;
-    margin-right: 5px;
-    border-color: #13a4a4;
-    border-style: solid;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-}
-
-.login {
-    background-color: rgb(85, 1, 96);
-    justify-self: center;
-    align-self: center;
-    justify-content: center;
-    border-color: #13a4a4;
-    border-radius: 15px;
-    border-style: solid;
-    /*width: 83vw;
-    height: 60vh;*/
-    display: flex;
-    align-items: center;
-}
-
-.divformlogin {
-    display: flex;
-    background-color: bisque;
-    width: auto;
-    height: auto;
-    justify-content: space-around;
-    border-radius: 10px;
-    border-color: rgb(233, 198, 156);
-    border-style: solid;
-    align-content: center;
-}
-
-.formlogin {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;    
-    font-family: "Lucida Console", Monaco, monospace;
-    font-size: 1.6rem;
-}
-
-
-input {
-    font-family: "Lucida Console", Monaco, monospace;
-    font-size: 1.6rem;
-    border: solid 2px #13a4a4;
-    border-radius: 15px;
-    background-color: #13a4a44f;
-}

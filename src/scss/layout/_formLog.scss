@@ -1,0 +1,58 @@
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    font-size: 62.5%;
+    font-family: $font;
+}
+
+body {
+    background-color: $background;
+}
+
+.main {
+    background-image: url(../../public/images/bckgrnd.yllw-prpl.png);
+    border: 4px solid $turquise;
+    border-radius: 15px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.signIn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+    background-color: bisque;
+    border: 3px solid $violet;
+    border-radius: 15px;
+    font-size: 1.6rem;
+    &__title {
+        text-align: center;
+    }
+    &__label {
+        padding-top: 15px;
+    }
+    &__input {
+        font-family: $font;
+        font-size: 1.6rem;
+        border: solid 2px $turquise;
+        border-radius: 5px;
+        background-color: $background;
+        height: 30px;
+    }
+    &__button {
+        font-family: $font;
+        font-size: 1.6rem;
+        border: solid 4px $violet;
+        border-radius: 5px;
+        background-color:rgba(168, 98, 200, 0.509);
+        height: 40px;
+        transform: translateY(10px);
+        
+    }
+}
+
+

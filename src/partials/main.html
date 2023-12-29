@@ -1,37 +1,36 @@
 <main class="main">
-    <div class="login">
-        <div class="divformlogin">
-            <form action="https://formspree.io/f/mayryyll" class="formlogin">
-                <p>LOG IN</p>
-                <label for="name" class="intro">
-                    <span>User:</span>
-                    <input type="text" id="name" placeholder="Name Surname">
-                </label> <br>
-                <label for="nickname" class="intro">
-                    <span>Nickname:</span>
-                    <input type="text" id="nickname" placeholder="Nickname">
-                </label><br>
-                <label for="date" class="intro">
-                    <span>Date of birth:</span>
-                    <input type="date" id="date">
-                </label><br>
-                <label for="email" class="intro">
-                    <span>Email:</span>
-                    <input type="email" id="email" placeholder="">
-                </label><br>
-                <label for="number" class="intro">
-                    <span>Phone number:</span>
-                    <input type="number" name="number" id="number">
-                </label><br>
-                <label for="password" class="intro">
-                    <span>Create your password</span>
-                    <input type="password" name="password" id="password">
-                </label>
+    <form action="https://formspree.io/f/mayryyll" class="signIn">
+        <h1 class="signIn__title">SIGN UP</h1>
+        <label for="name" class="signIn__label">
+            Name:
+           
+        </label>
+        <input type="text" id="name" name="name" placeholder="Name" required class="signIn__input">
+        <label for="surname" class="signIn__label">
+            Surname:
+        </label>
+        <input type="text" id="surname" name="surname" placeholder="Surname" required class="signIn__input">
+        <label for="nickname" class="signIn__label">
+            Nickname:
+        </label>
+        <input type="text" id="nickname" name="nickname" placeholder="Nickname" required class="signIn__input">
+        <label for="date" class="signIn__label">
+            Date of birth:
+        </label>
+        <input type="date" id="date" name="dateofbirth" required class="signIn__input">
+        <label for="email" class="signIn__label">
+            Email:
+        </label>
+        <input type="email" id="email" name="email" placeholder="" required class="signIn__input">
+        <label for="number" class="signIn__label">
+            Phone number:
+        </label>
+        <input type="tel" pattern="[0-9]{9}" title="A valid telephone number consist of a 3 digits code area between brackets, a space, the three first digits of the number, a space or hypen (-), and four more digits" id="number" name="number" required class="signIn__input">
+        <label for="password" class="signIn__label">
+            Create your password:
+        </label>
+        <input type="password" name="password" id="password" required class="signIn__input">
+        <input type="submit" value="Submit" id="submit" class="signIn__button">
 
-                <label for="submit" class="intro">
-                    <input type="button" value="submit" id="submit">
-                </label>
-            </form>
-        </div>
-    </div>
+    </form>
 </main>

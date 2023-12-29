@@ -1,36 +1,42 @@
 .header {
     display: flex;
     justify-content: space-between;
+    padding-right: 10px;
+
     &__nav {
         display: flex;
         align-items: flex-end;
-        // margin-right: 20px;
         font-size: 1.6rem;
-        @media (max-width: 767px) {
+
+        @media (max-width: 768px) {
             display: none;
         }
     }
+
+    &__menu {
+        width: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+
+        &--bar {
+            border-top: 3px solid $violet;
+            border-radius: 10%;
+        }
+
+        @media (min-width: 768px) {
+            display: none;
+        }
+
+    }
 }
+
 .photodali {
-    width: 60px;
-    // margin-bottom: -20px;
-    // margin-top: -5px;
+    width: 50px;
+    margin-bottom: -10px;
 }
-.menu{
-    width: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    justify-content: center;
-    transform: translateX(-10px);
-    &__bar{
-        border-top: 3px solid $violet;
-        border-radius: 5%;        
-    }
-    @media (min-width: 768px) {
-        display: none;
-    }
-}
+
 
 .ulist {
     display: flex;
@@ -40,11 +46,10 @@
     &__li {
         &--a {
             color: bisque;
-            background-color: #13a4a4;
+            background-color: $turquise;
             padding: 5px;
             border-radius: 2px;
             text-decoration-line: none;
-            display: block;
             text-align: center;
         }
 
